@@ -1,3 +1,5 @@
+> 更新：2026-10-15 已完成公开部署和核心浏览器实测，最新结果与边界见 [DEPLOYMENT_VERIFICATION.md](DEPLOYMENT_VERIFICATION.md)。下文保留原计划及历史记录；未执行项不视为通过。
+
 # 测试说明与验收标准
 
 ## 自动化测试
