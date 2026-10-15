@@ -255,16 +255,21 @@ with ingest:
     st.divider()
     st.subheader('AI 分拣助手（可选）')
     st.caption('API Key 仅在服务器环境变量中配置；AI 不作最终投资判断。提交内容将发送到所配置的模型服务。')
+    def ai_setting(name, default=None):
+        try:
+            return st.secrets.get(name, os.getenv(name, default))
+        except Exception:
+            return os.getenv(name, default)
+    ai_provider = str(ai_setting('AI_PROVIDER', 'openai')).lower()
+    st.caption('当前模型服务：' + ('Groq' if ai_provider == 'groq' else 'OpenAI') + '；仅发送下方输入的材料，结果必须人工复核。')
     ai_text=st.text_area('待分析文本',height=90,placeholder='粘贴公告/新闻/研报观点... ',key='ai_text')
     if st.button('调用大模型分析', disabled=not ai_text.strip()):
         if relation_score(ai_text)<2:
             st.warning('这段材料与当前事件关联较弱，需人工确认，避免错误合并。')
-        try:
-            server_key=st.secrets.get('OPENAI_API_KEY')
-        except (FileNotFoundError, KeyError, Exception):
-            server_key=None
+        server_key = ai_setting('GROQ_API_KEY' if ai_provider == 'groq' else 'OPENAI_API_KEY')
+        server_model = ai_setting('GROQ_MODEL' if ai_provider == 'groq' else 'OPENAI_MODEL')
         with st.spinner('正在分析，若未配置Key则会提示...'):
-            result,err=classify_with_llm(ai_text, api_key=server_key)
+            result,err=classify_with_llm(ai_text, api_key=server_key, provider=ai_provider, model=server_model)
         if err:
             st.warning(err)
         else:

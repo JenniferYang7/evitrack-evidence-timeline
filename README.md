@@ -129,3 +129,18 @@ python -m py_compile app.py engine.py ai_assist.py
 - 此前打包环境未完成网页验收；现已在Streamlit Cloud启动并完成核心浏览器实测，具体范围见 DEPLOYMENT_VERIFICATION.md。真实模型调用与独立无痕验收仍未完成。
 
 新手部署流程另见 `DEPLOY_GUIDE.md`。
+
+
+## Groq 免费计划接入（2026-10-15）
+
+支持使用 Groq 的兼容接口；是否可用及限额以账号控制台为准，不自动升级付费。
+在 Streamlit App settings → Secrets 配置（不得提交真实密钥）：
+
+```toml
+AI_PROVIDER = "groq"
+GROQ_API_KEY = "YOUR_PRIVATE_KEY"
+GROQ_MODEL = "openai/gpt-oss-120b"
+```
+
+仅提交的公开材料会发送到 Groq。输入上限3500字；异常或限流明确提示，不伪造结果。模型输出经过字段类型校验，固定需要人工复核，不改变证据可信度与事件状态。
+本轮新增5项模拟接口测试通过；真实调用状态请以最新验证记录为准。
