@@ -1,0 +1,22 @@
+[
+  {
+    "id":"src_csrc_0507", "title":"国新办发布会：央行宣布降准0.5个百分点", "publisher":"中国证监会官网（转载国新办发布会实录）", "source_type":"官方原始披露", "score":5, "kind":"事实", "stage":"宣布", "published_at":"2025-05-07", "occurred_at":"2025-05-07", "collected_at":"2026-10-15", "updated_at":null, "verified":true, "synthetic":false, "version":1,
+    "url":"https://www.csrc.gov.cn/csrc/c106311/c7555758/content.shtml", "excerpt":"中国人民银行行长潘功胜在2025年5月7日国新办发布会上表示：降低存款准备金率0.5个百分点，预计向市场提供长期流动性约1万亿元。", "facts":{"rrr_cut_pp":0.5, "expected_liquidity_cny_trillion":1.0}, "basis":"发布会实录、潘功胜发言；1万亿元属于预计规模而非实际到账统计。"
+  },
+  {
+    "id":"src_xinhua_0507", "title":"新华网：央行公布降准生效日期和适用范围", "publisher":"新华网", "source_type":"专业媒体", "score":3, "kind":"事实", "stage":"宣布", "published_at":"2025-05-07", "occurred_at":"2025-05-07", "collected_at":"2026-10-15", "updated_at":null, "verified":true, "synthetic":false, "version":1,
+    "url":"https://www.xinhuanet.com/20250507/0fb90e6da5c44d42be19f5f836890a75/c.html", "excerpt":"2025年5月7日，新华社报道：中国人民银行宣布自2025年5月15日起，下调金融机构存款准备金率0.5个百分点，不含已执行5%准备金率的金融机构。", "facts":{"rrr_cut_pp":0.5, "effective_date":"2025-05-15"}, "basis":"报道明确公告日期、实施日期、基准调整及适用对象；未将相邻降息混为降准。"
+  },
+  {
+    "id":"src_reuters_0507", "title":"路透社：政策背景及可能的经济影响", "publisher":"Reuters", "source_type":"专业媒体", "score":3, "kind":"观点", "stage":"市场解读", "published_at":"2025-05-07", "occurred_at":"2025-05-07", "collected_at":"2026-10-15", "updated_at":null, "verified":true, "synthetic":false, "version":1,
+    "url":"https://www.reuters.com/markets/asia/china-central-bank-governor-says-will-cut-banks-reserve-requirement-ratio-2025-05-07/", "excerpt":"路透社报道将降准置于外部贸易压力、国内经济支持等背景中，援引分析师观点讨论政策对经济及市场的潜在影响；影响判断不等于已证实的股价因果。", "facts":{}, "basis":"报道和专家观点属于背景/推断；不使用其预测替代已发生事实。"
+  },
+  {
+    "id":"src_gov_0515", "title":"中国政府网：2025年首次降准于5月15日正式实施", "publisher":"中国政府网（新华社报道）", "source_type":"权威官方转载", "score":4, "kind":"事实", "stage":"正式实施", "published_at":"2025-05-15", "occurred_at":"2025-05-15", "collected_at":"2026-10-15", "updated_at":null, "verified":true, "synthetic":false, "version":1,
+    "url":"https://english.www.gov.cn/news/202505/15/content_WS68254f59c6d0868f4e8f2902.html", "excerpt":"2025年5月15日，新华社经中国政府网报道：金融机构存款准备金率下调0.5个百分点正式生效，预计释放长期流动性约1万亿元。", "facts":{"rrr_cut_pp":0.5, "effective_date":"2025-05-15"}, "basis":"报道证实当日措施已生效；流动性数额仍为预计，不代表实际到账核算。"
+  },
+  {
+    "id":"src_shanghai_0515", "title":"上海金融委网站转载上海证券报：降准落地后的市场讨论", "publisher":"上海市委金融办网站（转载上海证券报）", "source_type":"分析观点", "score":2, "kind":"观点", "stage":"市场解读", "published_at":"2025-05-15", "occurred_at":"2025-05-15", "collected_at":"2026-10-15", "updated_at":null, "verified":true, "synthetic":false, "version":1,
+    "url":"https://jrj.sh.gov.cn/ZXYW178/20250515/99ac13c367044da4bad77818932f9d21.html", "excerpt":"上海证券报讨论降准实施与实体经济、信贷供给及市场预期之间的可能关联；报道里的影响判断需与政策实际落地事实区分。", "facts":{}, "basis":"观点仅用于解释传导路径，不作为个股涨跌的确定性依据。"
+  }
+]
